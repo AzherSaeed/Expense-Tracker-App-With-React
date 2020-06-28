@@ -10,6 +10,7 @@ function App() {
      <Header/>
      <Balence/>
      <incomeExpenses/>
+    
     </div>
   );
 }
