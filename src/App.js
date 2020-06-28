@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from '../components/Header'
 
 import './App.css';
 
 function App() {
   return (
     <div>
-     <h1>Action run or not</h1>
+     <Header/>
     </div>
   );
 }
