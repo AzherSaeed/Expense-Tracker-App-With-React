@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div>
-     <h1>Hello World updated</h1>
+     <h1>Action run or not</h1>
     </div>
   );
 }
