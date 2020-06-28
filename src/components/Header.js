@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Header = () => {
+const Header = () => {
     return (
         <div>
             <h1>Expense Tracker App</h1>
         </div>
     )
 }
+
+export default Header;
