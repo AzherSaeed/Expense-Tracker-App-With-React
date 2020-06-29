@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Balence from './components/Balence';
 import IncomeExpenses from './components/incomeExpenses'
 import './App.css';
+import { TransactionList } from './components/TransactionList';
+import { AddTransaction } from './components/AddTransaction';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
      <Header/>
      <Balence/>
      <IncomeExpenses/>
+     <TransactionList/>
+     <AddTransaction/>
     
     </div>
   );
