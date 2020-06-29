@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Balence from './components/Balence';
-import incomeExpenses from './components/incomeExpenses'
+import IncomeExpenses from './components/incomeExpenses'
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
      <Header/>
      <Balence/>
-     <incomeExpenses/>
+     <IncomeExpenses/>
     
     </div>
   );
