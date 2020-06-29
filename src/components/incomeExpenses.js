@@ -4,7 +4,8 @@ import {GlobalContext} from '../context/GlobalState';
  const IncomeExpenses = () => {
     const {transaction} = useContext(GlobalContext);
 
-    const amounts = transaction.map(trans => trans.amount)
+    const amounts = transaction.map(trans => trans.Amount)
+    console.log(amounts)
     const income = amounts
     .filter(item => item > 0)
     .reduce((acc , item) => (acc += item) , 0)
@@ -17,11 +18,11 @@ import {GlobalContext} from '../context/GlobalState';
         <div>
             <div className="inc-exp-container">
                 <h4>Income</h4>
-    <p class="money plus" >{income}</p>
+                    <p className="money plus" >{income}</p>
             </div>
             <div>
                 <h4>Expenses</h4>
-    <p className="money minus" >{expense}</p>
+                <p className="money minus" >{expense}</p>
             </div>
         </div>
     )

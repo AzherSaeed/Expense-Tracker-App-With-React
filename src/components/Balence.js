@@ -2,9 +2,9 @@ import React , {useContext} from 'react'
 import {GlobalContext} from '../context/GlobalState';
 
 function Balence() {
-    const {transaction} = useContext(GlobalContext);
+    const context = useContext(GlobalContext);
 
-    const amounts = transaction.map(trans => trans.amount);
+    const amounts = context.transaction.map(trans => trans.Amount);
     const total = amounts.reduce((acc , item ) => (acc += item) , 0).toFixed(2)
     return (
         <>
